@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DigitalMinds Careers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="gallery">
+     
+</div>
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.8) !important;
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            color: var(--primary) !important;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: #64748b !important;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary) !important;
+        }
+
+        .hero {
+            background: white;
+            padding: 100px 0;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .section-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        h2 {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #0f172a;
+        }
+
+        .trainee-card {
+            background: #f1f5f9;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            height: 100%;
+            transition: transform 0.2s;
+        }
+
+        .trainee-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .trainee-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border: 4px solid white;
+        }
+
+        .form-control {
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            border: 1px solid #cbd5e1;
+            background: #f8fafc;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+            border-color: var(--primary);
+        }
+
+        .btn-submit {
+            background: var(--primary);
+            color: white;
+            border-radius: 10px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            border: none;
+            width: 100%;
+        }
+
+        .btn-submit:hover {
+            background: #2563eb;
+        }
+
+        footer {
+            padding: 4rem 0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .job-tag {
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">DigitalMinds</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#trainees">Trainees</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#jobs">Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apply">Apply</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Build something that matters.</h1>
+            <p class="lead text-muted">Join the next generation of web developers at DigitalMinds Web.</p>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section id="about" class="section-card">
+            <h2>Company Profile</h2>
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <p class="fs-5">We are a forward-thinking agency specializing in modern web solutions. Our mission is
+                        to combine professional innovation with high-level mentoring to launch your digital career.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <span class="job-tag">Hiring Now</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- UPDATED TRAINEES SECTION -->
+        <section id="trainees" class="section-card">
+            <h2 class="text-center">Meet the Team</h2>
+            <div class="row g-4 mt-2">
+
+                <div class="col-md-6">
+                    <div class="trainee-card">
+                        <img src="images/Myles.jpg" class="trainee-img">
+                        <h4>Myles Warwick</h4>
+                        <p class="text-muted">"Joining as a trainee allowed me to work on real-world projects immediately with senior architects."</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="trainee-card">
+                        <img src="images/ryan-murphy.jpg" class="trainee-img">
+                        <h4>Ryan Murphy</h4>
+                        <p class="text-muted">"The perfect environment for those who want to sharpen their coding skills after certifications."</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="trainee-card">
+                        <img src="images/ethan.jpg" class="trainee-img">
+                        <h4>Ethan Millar</h4>
+                        <p class="text-muted">"Every day feels like leveling up — the mentorship here is unmatched."</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="trainee-card">
+                        <img src="images/jordan.jpg" class="trainee-img">
+                        <h4>Jordan</h4>
+                        <p class="text-muted">"I finally understand how real development teams work. It’s been a game changer."</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="trainee-card">
+                        <img src="images/abdual.jpg" class="trainee-img">
+                        <h4>Abdullah Sillah</h4>
+                        <p class="text-muted">"The hands-on projects pushed me further than any online course ever did."</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="trainee-card">
+                        <img src="images/evei.jpg" class="trainee-img">
+                        <h4>Eve</h4>
+                        <p class="text-muted">"I love how supportive the team is — you’re never afraid to ask questions."</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="trainee-card">
+                        <img src="images/ayaan.jpg" class="trainee-img">
+                        <h4>Ayaan</h4>
+                        <p class="text-muted">"Working with real clients this early in my career has boosted my confidence massively."</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="trainee-card">
+                        <img src="images/john-ogunsola.jpg" class="trainee-img">
+                        <h4>John Ogunsola</h4>
+                        <p class="text-muted">"The culture here makes learning fun — even the tough challenges feel rewarding."</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="trainee-card">
+                        <img src="images/najeeb.jpg" class="trainee-img">
+                        <h4>Najeeb Abdullahi</h4>
+                        <p class="text-muted">"I’ve grown more in three months here than in a year of studying alone."</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="trainee-card">
+                        <img src="images/Luis-Ibhiabor.jpg" class="trainee-img">
+                        <h4>Luis Ibhiabor</h4>
+                        <p class="text-muted">"DigitalMinds helped me turn theory into real, production-ready skills."</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <section id="jobs" class="section-card h-100">
+                    <h2>Job Specs</h2>
+                    <h4 class="h5">Junior Web Developer</h4>
+                    <p class="text-muted small">Full-time • Hybrid</p>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-3"><strong>✓ Requirements:</strong> HTML, CSS, JavaScript</li>
+                        <li class="mb-3"><strong>✓ Education:</strong> Degree or Bootcamp</li>
+                        <li class="mb-3"><strong>✓ Soft Skills:</strong> Teamwork & Problem Solving</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-6">
+                <section id="apply" class="section-card h-100">
+                    <h2>Apply Now</h2>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Full Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="mb-3">
+                            <input type="url" class="form-control" placeholder="Portfolio URL">
+                        </div>
+                        <button type="submit" class="btn-submit">Submit Application</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+        <section id="courses" class="section-card mt-4">
+            <h2>Recommended Resources</h2>
+            <div class="d-flex flex-wrap gap-3">
+                <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
+                   target="_blank"
+                   class="btn btn-outline-primary rounded-pill">JS Advanced</a>
+
+                <a href="https://www.freecodecamp.org/learn/responsive-web-design/"
+                   target="_blank"
+                   class="btn btn-outline-primary rounded-pill">Responsive Design</a>
+
+                <a href="https://www.theodinproject.com/paths/full-stack-javascript"
+                   target="_blank"
+                   class="btn btn-outline-primary rounded-pill">Full-Stack Bootcamp</a>
+            </div>
+        </section>
+
+        <footer class="text-center">
+            <p id="copywrite">&copy; 2026 DigitalMinds Web</p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.getElementById("copywrite").innerText =
+            "© " + new Date().getFullYear() + " DigitalMinds Web";
+
+        document.querySelector("form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Your application has been submitted successfully!");
+            e.target.reset();
+        });
+    </script>
+
+</body>
+
+</html>
